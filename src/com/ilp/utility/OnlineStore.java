@@ -1,5 +1,4 @@
 package com.ilp.utility;
-
 import com.ilp.entity.*;
 import com.ilp.interfaces.*;
 import com.ilp.services.InMemoryUserRepository;
@@ -8,7 +7,8 @@ import com.ilp.services.InMemoryUserRepository;
 
 public class OnlineStore {
     public static void main(String[] args) {
-        UserRepository userRepository = new InMemoryUserRepository();
+
+UserRepository userRepository = new InMemoryUserRepository();
 
         User newUser = new User("john_doe", "password123");
         userRepository.registerUser(newUser);
